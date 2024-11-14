@@ -1,0 +1,18 @@
+{
+  "capabilities": [
+    {
+      "browserName": "chrome",
+      "maxInstances": 12
+    }
+  ],
+  "configuration": {
+    "cleanUpCycle": 2000,
+    "timeout": 30000,
+    "maxSession": 12,
+    "port": 5555,
+    "register": true,
+    "registerCycle": 5000,
+    "hub": "http://localhost:4444/grid/register",
+    "nodeTimeout": 300
+  }
+}
