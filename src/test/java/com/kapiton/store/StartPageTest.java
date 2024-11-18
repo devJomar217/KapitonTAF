@@ -58,7 +58,7 @@ public class StartPageTest {
         extent.attachReporter(mainReporter, backupReporter);
     }
 
-    @Test
+    //@Test
     @Parameters({"numUsers", "concurrentUsers"})
     public void testLogin(int numUsers, int concurrentUsers) throws InterruptedException {
         this.numUsers = numUsers;
@@ -101,8 +101,8 @@ public class StartPageTest {
             WebElement loginButton = driver.findElement(By.xpath("//button[@type='submit']"));
 
             // Fill in the email and password
-            emailField.sendKeys("REPLACE_WITH_ACTUAL_VALUE");  // Replace with actual test email
-            passwordField.sendKeys("REPLACE_WITH_ACTUAL_VALUE");  // Replace with actual test password
+            emailField.sendKeys("ninofeliciano9@gmail.com");  // Replace with actual test email
+            passwordField.sendKeys("ngapasWa.1");  // Replace with actual test password
             test.info("Entered email and password for login.");
 
             // Click the login button
@@ -223,7 +223,7 @@ public class StartPageTest {
             capabilities.setCapability("browserName", "chrome");
             capabilities.setCapability("platformName", "Windows 11");
 
-            URL hubUrl = new URL("http://192.168.1.12:4444/wd/hub");
+            URL hubUrl = new URL("http://192.168.254.100:4444/wd/hub");
             return new RemoteWebDriver(hubUrl, capabilities);
         } catch (Exception e) {
             throw new RuntimeException("Failed to initialize WebDriver: " + e.getMessage());
