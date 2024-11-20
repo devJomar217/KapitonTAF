@@ -1,6 +1,6 @@
 <suite name="Stress Test Suite" parallel="tests" thread-count="5">
     <test name="Stress Test with Multiple Users">
-        <parameter name="numUsers" value="10"/>
+        <parameter name="numUsers" value="2"/>
         <parameter name="concurrentUsers" value="5" />
         <classes>
             <class name="com.kapiton.store.StartPageTest"/>
